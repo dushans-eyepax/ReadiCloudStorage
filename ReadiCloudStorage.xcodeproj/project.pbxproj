@@ -1,0 +1,629 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		604FDCA82837C10A0009386D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 604FDCA72837C10A0009386D /* AppDelegate.swift */; };
+		604FDCAA2837C10A0009386D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 604FDCA92837C10A0009386D /* SceneDelegate.swift */; };
+		604FDCAC2837C10A0009386D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 604FDCAB2837C10A0009386D /* ViewController.swift */; };
+		604FDCAF2837C10A0009386D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 604FDCAD2837C10A0009386D /* Main.storyboard */; };
+		604FDCB12837C10E0009386D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 604FDCB02837C10E0009386D /* Assets.xcassets */; };
+		604FDCB42837C10E0009386D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 604FDCB22837C10E0009386D /* LaunchScreen.storyboard */; };
+		604FDCBF2837C10E0009386D /* ReadiCloudStorageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 604FDCBE2837C10E0009386D /* ReadiCloudStorageTests.swift */; };
+		604FDCC92837C10E0009386D /* ReadiCloudStorageUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 604FDCC82837C10E0009386D /* ReadiCloudStorageUITests.swift */; };
+		604FDCCB2837C10F0009386D /* ReadiCloudStorageUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 604FDCCA2837C10F0009386D /* ReadiCloudStorageUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		604FDCBB2837C10E0009386D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 604FDC9C2837C10A0009386D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 604FDCA32837C10A0009386D;
+			remoteInfo = ReadiCloudStorage;
+		};
+		604FDCC52837C10E0009386D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 604FDC9C2837C10A0009386D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 604FDCA32837C10A0009386D;
+			remoteInfo = ReadiCloudStorage;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		604FDCA42837C10A0009386D /* ReadiCloudStorage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReadiCloudStorage.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		604FDCA72837C10A0009386D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		604FDCA92837C10A0009386D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		604FDCAB2837C10A0009386D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		604FDCAE2837C10A0009386D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		604FDCB02837C10E0009386D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		604FDCB32837C10E0009386D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		604FDCB52837C10E0009386D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		604FDCBA2837C10E0009386D /* ReadiCloudStorageTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReadiCloudStorageTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		604FDCBE2837C10E0009386D /* ReadiCloudStorageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadiCloudStorageTests.swift; sourceTree = "<group>"; };
+		604FDCC42837C10E0009386D /* ReadiCloudStorageUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReadiCloudStorageUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		604FDCC82837C10E0009386D /* ReadiCloudStorageUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadiCloudStorageUITests.swift; sourceTree = "<group>"; };
+		604FDCCA2837C10F0009386D /* ReadiCloudStorageUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadiCloudStorageUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		604FDCA12837C10A0009386D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		604FDCB72837C10E0009386D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		604FDCC12837C10E0009386D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		604FDC9B2837C10A0009386D = {
+			isa = PBXGroup;
+			children = (
+				604FDCA62837C10A0009386D /* ReadiCloudStorage */,
+				604FDCBD2837C10E0009386D /* ReadiCloudStorageTests */,
+				604FDCC72837C10E0009386D /* ReadiCloudStorageUITests */,
+				604FDCA52837C10A0009386D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		604FDCA52837C10A0009386D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				604FDCA42837C10A0009386D /* ReadiCloudStorage.app */,
+				604FDCBA2837C10E0009386D /* ReadiCloudStorageTests.xctest */,
+				604FDCC42837C10E0009386D /* ReadiCloudStorageUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		604FDCA62837C10A0009386D /* ReadiCloudStorage */ = {
+			isa = PBXGroup;
+			children = (
+				604FDCA72837C10A0009386D /* AppDelegate.swift */,
+				604FDCA92837C10A0009386D /* SceneDelegate.swift */,
+				604FDCAB2837C10A0009386D /* ViewController.swift */,
+				604FDCAD2837C10A0009386D /* Main.storyboard */,
+				604FDCB02837C10E0009386D /* Assets.xcassets */,
+				604FDCB22837C10E0009386D /* LaunchScreen.storyboard */,
+				604FDCB52837C10E0009386D /* Info.plist */,
+			);
+			path = ReadiCloudStorage;
+			sourceTree = "<group>";
+		};
+		604FDCBD2837C10E0009386D /* ReadiCloudStorageTests */ = {
+			isa = PBXGroup;
+			children = (
+				604FDCBE2837C10E0009386D /* ReadiCloudStorageTests.swift */,
+			);
+			path = ReadiCloudStorageTests;
+			sourceTree = "<group>";
+		};
+		604FDCC72837C10E0009386D /* ReadiCloudStorageUITests */ = {
+			isa = PBXGroup;
+			children = (
+				604FDCC82837C10E0009386D /* ReadiCloudStorageUITests.swift */,
+				604FDCCA2837C10F0009386D /* ReadiCloudStorageUITestsLaunchTests.swift */,
+			);
+			path = ReadiCloudStorageUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		604FDCA32837C10A0009386D /* ReadiCloudStorage */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 604FDCCE2837C10F0009386D /* Build configuration list for PBXNativeTarget "ReadiCloudStorage" */;
+			buildPhases = (
+				604FDCA02837C10A0009386D /* Sources */,
+				604FDCA12837C10A0009386D /* Frameworks */,
+				604FDCA22837C10A0009386D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ReadiCloudStorage;
+			productName = ReadiCloudStorage;
+			productReference = 604FDCA42837C10A0009386D /* ReadiCloudStorage.app */;
+			productType = "com.apple.product-type.application";
+		};
+		604FDCB92837C10E0009386D /* ReadiCloudStorageTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 604FDCD12837C10F0009386D /* Build configuration list for PBXNativeTarget "ReadiCloudStorageTests" */;
+			buildPhases = (
+				604FDCB62837C10E0009386D /* Sources */,
+				604FDCB72837C10E0009386D /* Frameworks */,
+				604FDCB82837C10E0009386D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				604FDCBC2837C10E0009386D /* PBXTargetDependency */,
+			);
+			name = ReadiCloudStorageTests;
+			productName = ReadiCloudStorageTests;
+			productReference = 604FDCBA2837C10E0009386D /* ReadiCloudStorageTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		604FDCC32837C10E0009386D /* ReadiCloudStorageUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 604FDCD42837C10F0009386D /* Build configuration list for PBXNativeTarget "ReadiCloudStorageUITests" */;
+			buildPhases = (
+				604FDCC02837C10E0009386D /* Sources */,
+				604FDCC12837C10E0009386D /* Frameworks */,
+				604FDCC22837C10E0009386D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				604FDCC62837C10E0009386D /* PBXTargetDependency */,
+			);
+			name = ReadiCloudStorageUITests;
+			productName = ReadiCloudStorageUITests;
+			productReference = 604FDCC42837C10E0009386D /* ReadiCloudStorageUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		604FDC9C2837C10A0009386D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1310;
+				LastUpgradeCheck = 1310;
+				TargetAttributes = {
+					604FDCA32837C10A0009386D = {
+						CreatedOnToolsVersion = 13.1;
+					};
+					604FDCB92837C10E0009386D = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = 604FDCA32837C10A0009386D;
+					};
+					604FDCC32837C10E0009386D = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = 604FDCA32837C10A0009386D;
+					};
+				};
+			};
+			buildConfigurationList = 604FDC9F2837C10A0009386D /* Build configuration list for PBXProject "ReadiCloudStorage" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 604FDC9B2837C10A0009386D;
+			productRefGroup = 604FDCA52837C10A0009386D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				604FDCA32837C10A0009386D /* ReadiCloudStorage */,
+				604FDCB92837C10E0009386D /* ReadiCloudStorageTests */,
+				604FDCC32837C10E0009386D /* ReadiCloudStorageUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		604FDCA22837C10A0009386D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				604FDCB42837C10E0009386D /* LaunchScreen.storyboard in Resources */,
+				604FDCB12837C10E0009386D /* Assets.xcassets in Resources */,
+				604FDCAF2837C10A0009386D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		604FDCB82837C10E0009386D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		604FDCC22837C10E0009386D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		604FDCA02837C10A0009386D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				604FDCAC2837C10A0009386D /* ViewController.swift in Sources */,
+				604FDCA82837C10A0009386D /* AppDelegate.swift in Sources */,
+				604FDCAA2837C10A0009386D /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		604FDCB62837C10E0009386D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				604FDCBF2837C10E0009386D /* ReadiCloudStorageTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		604FDCC02837C10E0009386D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				604FDCCB2837C10F0009386D /* ReadiCloudStorageUITestsLaunchTests.swift in Sources */,
+				604FDCC92837C10E0009386D /* ReadiCloudStorageUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		604FDCBC2837C10E0009386D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 604FDCA32837C10A0009386D /* ReadiCloudStorage */;
+			targetProxy = 604FDCBB2837C10E0009386D /* PBXContainerItemProxy */;
+		};
+		604FDCC62837C10E0009386D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 604FDCA32837C10A0009386D /* ReadiCloudStorage */;
+			targetProxy = 604FDCC52837C10E0009386D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		604FDCAD2837C10A0009386D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				604FDCAE2837C10A0009386D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		604FDCB22837C10E0009386D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				604FDCB32837C10E0009386D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		604FDCCC2837C10F0009386D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		604FDCCD2837C10F0009386D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		604FDCCF2837C10F0009386D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = M7C27N4V3N;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ReadiCloudStorage/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ep.ReadiCloudStorage;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		604FDCD02837C10F0009386D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = M7C27N4V3N;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ReadiCloudStorage/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ep.ReadiCloudStorage;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		604FDCD22837C10F0009386D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = M7C27N4V3N;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ep.ReadiCloudStorageTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ReadiCloudStorage.app/ReadiCloudStorage";
+			};
+			name = Debug;
+		};
+		604FDCD32837C10F0009386D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = M7C27N4V3N;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ep.ReadiCloudStorageTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ReadiCloudStorage.app/ReadiCloudStorage";
+			};
+			name = Release;
+		};
+		604FDCD52837C10F0009386D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = M7C27N4V3N;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ep.ReadiCloudStorageUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ReadiCloudStorage;
+			};
+			name = Debug;
+		};
+		604FDCD62837C10F0009386D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = M7C27N4V3N;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ep.ReadiCloudStorageUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ReadiCloudStorage;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		604FDC9F2837C10A0009386D /* Build configuration list for PBXProject "ReadiCloudStorage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				604FDCCC2837C10F0009386D /* Debug */,
+				604FDCCD2837C10F0009386D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		604FDCCE2837C10F0009386D /* Build configuration list for PBXNativeTarget "ReadiCloudStorage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				604FDCCF2837C10F0009386D /* Debug */,
+				604FDCD02837C10F0009386D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		604FDCD12837C10F0009386D /* Build configuration list for PBXNativeTarget "ReadiCloudStorageTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				604FDCD22837C10F0009386D /* Debug */,
+				604FDCD32837C10F0009386D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		604FDCD42837C10F0009386D /* Build configuration list for PBXNativeTarget "ReadiCloudStorageUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				604FDCD52837C10F0009386D /* Debug */,
+				604FDCD62837C10F0009386D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 604FDC9C2837C10A0009386D /* Project object */;
+}
