@@ -7,15 +7,46 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0287F05A0F4AF058C15F3A03 /* Pods_ReadiCloudStorage_ReadiCloudStorageUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB91C6008F40C3999C4D7985 /* Pods_ReadiCloudStorage_ReadiCloudStorageUITests.framework */; };
+		03A8DD389223963E7EF8E2FC /* Pods_ReadiCloudStorageTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DABEC1D7F8A28EB7C5F4228E /* Pods_ReadiCloudStorageTests.framework */; };
 		604FDCA82837C10A0009386D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 604FDCA72837C10A0009386D /* AppDelegate.swift */; };
 		604FDCAA2837C10A0009386D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 604FDCA92837C10A0009386D /* SceneDelegate.swift */; };
-		604FDCAC2837C10A0009386D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 604FDCAB2837C10A0009386D /* ViewController.swift */; };
+		604FDCAC2837C10A0009386D /* AthletesiCloudViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 604FDCAB2837C10A0009386D /* AthletesiCloudViewController.swift */; };
 		604FDCAF2837C10A0009386D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 604FDCAD2837C10A0009386D /* Main.storyboard */; };
 		604FDCB12837C10E0009386D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 604FDCB02837C10E0009386D /* Assets.xcassets */; };
 		604FDCB42837C10E0009386D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 604FDCB22837C10E0009386D /* LaunchScreen.storyboard */; };
 		604FDCBF2837C10E0009386D /* ReadiCloudStorageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 604FDCBE2837C10E0009386D /* ReadiCloudStorageTests.swift */; };
 		604FDCC92837C10E0009386D /* ReadiCloudStorageUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 604FDCC82837C10E0009386D /* ReadiCloudStorageUITests.swift */; };
 		604FDCCB2837C10F0009386D /* ReadiCloudStorageUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 604FDCCA2837C10F0009386D /* ReadiCloudStorageUITestsLaunchTests.swift */; };
+		604FDCD9283892600009386D /* CloudDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 604FDCD8283892600009386D /* CloudDataManager.swift */; };
+		604FDCDB283893FE0009386D /* AttachmentsGoogleDriveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 604FDCDA283893FE0009386D /* AttachmentsGoogleDriveViewController.swift */; };
+		604FDCDE283896780009386D /* PersonCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 604FDCDC283896780009386D /* PersonCVCell.swift */; };
+		604FDCDF283896780009386D /* PersonCVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 604FDCDD283896780009386D /* PersonCVCell.xib */; };
+		604FDCE3283896A80009386D /* AttachmentCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 604FDCE1283896A80009386D /* AttachmentCVCell.swift */; };
+		604FDCE4283896A80009386D /* AttachmentCVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 604FDCE2283896A80009386D /* AttachmentCVCell.xib */; };
+		604FDCED2838A4350009386D /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 604FDCEC2838A4350009386D /* CloudKit.framework */; };
+		60E9176728392BB0004B9C41 /* AttachmentsiCloudViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E9176528392BB0004B9C41 /* AttachmentsiCloudViewController.swift */; };
+		60E9176828392BB0004B9C41 /* AthletesGoogleDriveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E9176628392BB0004B9C41 /* AthletesGoogleDriveViewController.swift */; };
+		60E9176A28393A58004B9C41 /* AlertProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E9176928393A58004B9C41 /* AlertProvider.swift */; };
+		60E9176C28395F73004B9C41 /* client_439461828423-pq7lpqi1esuk8oj6aa8l2uf5mghcf9td.apps.googleusercontent.com.plist in Resources */ = {isa = PBXBuildFile; fileRef = 60E9176B28395F73004B9C41 /* client_439461828423-pq7lpqi1esuk8oj6aa8l2uf5mghcf9td.apps.googleusercontent.com.plist */; };
+		60E9176F2839D2AD004B9C41 /* AthletesFirebaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E9176E2839D2AD004B9C41 /* AthletesFirebaseViewController.swift */; };
+		60E917702839D2AD004B9C41 /* AttachmentsFirebaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E9176D2839D2AC004B9C41 /* AttachmentsFirebaseViewController.swift */; };
+		60E917872839D7F6004B9C41 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 60E917862839D7F6004B9C41 /* GoogleService-Info.plist */; };
+		60E917882839D852004B9C41 /* FirebaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E917782839D4FA004B9C41 /* FirebaseService.swift */; };
+		60E917892839D856004B9C41 /* PushNotificationSender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E917762839D4FA004B9C41 /* PushNotificationSender.swift */; };
+		60E9178B2839DC72004B9C41 /* Handlers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E9178A2839DC72004B9C41 /* Handlers.swift */; };
+		60E9178D2839DCAE004B9C41 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E9178C2839DCAE004B9C41 /* Constant.swift */; };
+		60E9179C2839DFFB004B9C41 /* Conversation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E9177A2839D4FA004B9C41 /* Conversation.swift */; };
+		60E9179D2839E026004B9C41 /* PushNotificationsAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E917972839DF05004B9C41 /* PushNotificationsAPI.swift */; };
+		60E9179E2839E026004B9C41 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E9179A2839DF05004B9C41 /* Reachability.swift */; };
+		60E9179F2839E026004B9C41 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E917902839DF05004B9C41 /* APIClient.swift */; };
+		60E917A32839E026004B9C41 /* ErrorResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E917942839DF05004B9C41 /* ErrorResponse.swift */; };
+		60E917A42839E026004B9C41 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E917982839DF05004B9C41 /* APIService.swift */; };
+		60E917A52839E026004B9C41 /* NetworkActivityIndicatorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E917992839DF05004B9C41 /* NetworkActivityIndicatorManager.swift */; };
+		60E917A62839E026004B9C41 /* DataRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E9179B2839DF05004B9C41 /* DataRequest.swift */; };
+		60E917A82839E158004B9C41 /* AppUserDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E917A72839E158004B9C41 /* AppUserDefault.swift */; };
+		60E917AA2839E1B3004B9C41 /* ChatMessageResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60E917A92839E1B3004B9C41 /* ChatMessageResponse.swift */; };
+		94AF49946C6CA46D85B977F0 /* Pods_ReadiCloudStorage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D45DD60C42192C352C0BE09E /* Pods_ReadiCloudStorage.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,10 +67,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0A1EE331AECDD72CDA3D231B /* Pods-ReadiCloudStorage.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReadiCloudStorage.debug.xcconfig"; path = "Target Support Files/Pods-ReadiCloudStorage/Pods-ReadiCloudStorage.debug.xcconfig"; sourceTree = "<group>"; };
+		319326B74EB7EAF30916409C /* Pods-ReadiCloudStorageTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReadiCloudStorageTests.debug.xcconfig"; path = "Target Support Files/Pods-ReadiCloudStorageTests/Pods-ReadiCloudStorageTests.debug.xcconfig"; sourceTree = "<group>"; };
+		531A3C7A2F9FCE1B08B6B627 /* Pods-ReadiCloudStorage-ReadiCloudStorageUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReadiCloudStorage-ReadiCloudStorageUITests.release.xcconfig"; path = "Target Support Files/Pods-ReadiCloudStorage-ReadiCloudStorageUITests/Pods-ReadiCloudStorage-ReadiCloudStorageUITests.release.xcconfig"; sourceTree = "<group>"; };
 		604FDCA42837C10A0009386D /* ReadiCloudStorage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReadiCloudStorage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		604FDCA72837C10A0009386D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		604FDCA92837C10A0009386D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		604FDCAB2837C10A0009386D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		604FDCAB2837C10A0009386D /* AthletesiCloudViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AthletesiCloudViewController.swift; sourceTree = "<group>"; };
 		604FDCAE2837C10A0009386D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		604FDCB02837C10E0009386D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		604FDCB32837C10E0009386D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +83,42 @@
 		604FDCC42837C10E0009386D /* ReadiCloudStorageUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReadiCloudStorageUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		604FDCC82837C10E0009386D /* ReadiCloudStorageUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadiCloudStorageUITests.swift; sourceTree = "<group>"; };
 		604FDCCA2837C10F0009386D /* ReadiCloudStorageUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadiCloudStorageUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		604FDCD8283892600009386D /* CloudDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudDataManager.swift; sourceTree = "<group>"; };
+		604FDCDA283893FE0009386D /* AttachmentsGoogleDriveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttachmentsGoogleDriveViewController.swift; sourceTree = "<group>"; };
+		604FDCDC283896780009386D /* PersonCVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonCVCell.swift; sourceTree = "<group>"; };
+		604FDCDD283896780009386D /* PersonCVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PersonCVCell.xib; sourceTree = "<group>"; };
+		604FDCE1283896A80009386D /* AttachmentCVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttachmentCVCell.swift; sourceTree = "<group>"; };
+		604FDCE2283896A80009386D /* AttachmentCVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AttachmentCVCell.xib; sourceTree = "<group>"; };
+		604FDCEC2838A4350009386D /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		604FDCF02838BED80009386D /* ReadiCloudStorage.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = ReadiCloudStorage.entitlements; sourceTree = "<group>"; };
+		60E917642839290A004B9C41 /* ReadiCloudStorage-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ReadiCloudStorage-Bridging-Header.h"; sourceTree = "<group>"; };
+		60E9176528392BB0004B9C41 /* AttachmentsiCloudViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttachmentsiCloudViewController.swift; sourceTree = "<group>"; };
+		60E9176628392BB0004B9C41 /* AthletesGoogleDriveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AthletesGoogleDriveViewController.swift; sourceTree = "<group>"; };
+		60E9176928393A58004B9C41 /* AlertProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertProvider.swift; sourceTree = "<group>"; };
+		60E9176B28395F73004B9C41 /* client_439461828423-pq7lpqi1esuk8oj6aa8l2uf5mghcf9td.apps.googleusercontent.com.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "client_439461828423-pq7lpqi1esuk8oj6aa8l2uf5mghcf9td.apps.googleusercontent.com.plist"; sourceTree = "<group>"; };
+		60E9176D2839D2AC004B9C41 /* AttachmentsFirebaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttachmentsFirebaseViewController.swift; sourceTree = "<group>"; };
+		60E9176E2839D2AD004B9C41 /* AthletesFirebaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AthletesFirebaseViewController.swift; sourceTree = "<group>"; };
+		60E917762839D4FA004B9C41 /* PushNotificationSender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushNotificationSender.swift; sourceTree = "<group>"; };
+		60E917782839D4FA004B9C41 /* FirebaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseService.swift; sourceTree = "<group>"; };
+		60E9177A2839D4FA004B9C41 /* Conversation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Conversation.swift; sourceTree = "<group>"; };
+		60E917862839D7F6004B9C41 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		60E9178A2839DC72004B9C41 /* Handlers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Handlers.swift; sourceTree = "<group>"; };
+		60E9178C2839DCAE004B9C41 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		60E917902839DF05004B9C41 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		60E917942839DF05004B9C41 /* ErrorResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorResponse.swift; sourceTree = "<group>"; };
+		60E917972839DF05004B9C41 /* PushNotificationsAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushNotificationsAPI.swift; sourceTree = "<group>"; };
+		60E917982839DF05004B9C41 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		60E917992839DF05004B9C41 /* NetworkActivityIndicatorManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkActivityIndicatorManager.swift; sourceTree = "<group>"; };
+		60E9179A2839DF05004B9C41 /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		60E9179B2839DF05004B9C41 /* DataRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataRequest.swift; sourceTree = "<group>"; };
+		60E917A72839E158004B9C41 /* AppUserDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUserDefault.swift; sourceTree = "<group>"; };
+		60E917A92839E1B3004B9C41 /* ChatMessageResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatMessageResponse.swift; sourceTree = "<group>"; };
+		A8F78EDEFBD02A1033EF9A2E /* Pods-ReadiCloudStorage-ReadiCloudStorageUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReadiCloudStorage-ReadiCloudStorageUITests.debug.xcconfig"; path = "Target Support Files/Pods-ReadiCloudStorage-ReadiCloudStorageUITests/Pods-ReadiCloudStorage-ReadiCloudStorageUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		AB91C6008F40C3999C4D7985 /* Pods_ReadiCloudStorage_ReadiCloudStorageUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReadiCloudStorage_ReadiCloudStorageUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BABBF7A5D0DC2E28A75B108C /* Pods-ReadiCloudStorage.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReadiCloudStorage.release.xcconfig"; path = "Target Support Files/Pods-ReadiCloudStorage/Pods-ReadiCloudStorage.release.xcconfig"; sourceTree = "<group>"; };
+		D45DD60C42192C352C0BE09E /* Pods_ReadiCloudStorage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReadiCloudStorage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DABEC1D7F8A28EB7C5F4228E /* Pods_ReadiCloudStorageTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReadiCloudStorageTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FDA316AF8EA8A90A0A944DBC /* Pods-ReadiCloudStorageTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReadiCloudStorageTests.release.xcconfig"; path = "Target Support Files/Pods-ReadiCloudStorageTests/Pods-ReadiCloudStorageTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +126,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				94AF49946C6CA46D85B977F0 /* Pods_ReadiCloudStorage.framework in Frameworks */,
+				604FDCED2838A4350009386D /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +135,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03A8DD389223963E7EF8E2FC /* Pods_ReadiCloudStorageTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +143,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0287F05A0F4AF058C15F3A03 /* Pods_ReadiCloudStorage_ReadiCloudStorageUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +157,8 @@
 				604FDCBD2837C10E0009386D /* ReadiCloudStorageTests */,
 				604FDCC72837C10E0009386D /* ReadiCloudStorageUITests */,
 				604FDCA52837C10A0009386D /* Products */,
+				CC2EDB0F6200D5293BA17962 /* Pods */,
+				99C56C1666D270AB9C6A3C00 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,13 +175,18 @@
 		604FDCA62837C10A0009386D /* ReadiCloudStorage */ = {
 			isa = PBXGroup;
 			children = (
-				604FDCA72837C10A0009386D /* AppDelegate.swift */,
-				604FDCA92837C10A0009386D /* SceneDelegate.swift */,
-				604FDCAB2837C10A0009386D /* ViewController.swift */,
-				604FDCAD2837C10A0009386D /* Main.storyboard */,
+				604FDCE7283898E00009386D /* LaunchScreen */,
+				604FDCE8283898ED0009386D /* AppDelegate */,
+				604FDCE5283898A80009386D /* Views */,
+				604FDCE9283898FD0009386D /* Managers */,
+				60E9178E2839DF05004B9C41 /* Networking */,
+				60E917712839D4FA004B9C41 /* FirebaseServices */,
 				604FDCB02837C10E0009386D /* Assets.xcassets */,
-				604FDCB22837C10E0009386D /* LaunchScreen.storyboard */,
 				604FDCB52837C10E0009386D /* Info.plist */,
+				604FDCF02838BED80009386D /* ReadiCloudStorage.entitlements */,
+				60E917642839290A004B9C41 /* ReadiCloudStorage-Bridging-Header.h */,
+				60E917862839D7F6004B9C41 /* GoogleService-Info.plist */,
+				60E9176B28395F73004B9C41 /* client_439461828423-pq7lpqi1esuk8oj6aa8l2uf5mghcf9td.apps.googleusercontent.com.plist */,
 			);
 			path = ReadiCloudStorage;
 			sourceTree = "<group>";
@@ -127,6 +208,158 @@
 			path = ReadiCloudStorageUITests;
 			sourceTree = "<group>";
 		};
+		604FDCE0283896800009386D /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				604FDCDC283896780009386D /* PersonCVCell.swift */,
+				604FDCDD283896780009386D /* PersonCVCell.xib */,
+				604FDCE1283896A80009386D /* AttachmentCVCell.swift */,
+				604FDCE2283896A80009386D /* AttachmentCVCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		604FDCE5283898A80009386D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				604FDCE6283898B70009386D /* Controllers */,
+				604FDCE0283896800009386D /* Cells */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		604FDCE6283898B70009386D /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				604FDCEA2838990E0009386D /* Main */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		604FDCE7283898E00009386D /* LaunchScreen */ = {
+			isa = PBXGroup;
+			children = (
+				604FDCB22837C10E0009386D /* LaunchScreen.storyboard */,
+			);
+			path = LaunchScreen;
+			sourceTree = "<group>";
+		};
+		604FDCE8283898ED0009386D /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				604FDCA72837C10A0009386D /* AppDelegate.swift */,
+				604FDCA92837C10A0009386D /* SceneDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		604FDCE9283898FD0009386D /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				604FDCD8283892600009386D /* CloudDataManager.swift */,
+				60E9176928393A58004B9C41 /* AlertProvider.swift */,
+				60E9178A2839DC72004B9C41 /* Handlers.swift */,
+				60E9178C2839DCAE004B9C41 /* Constant.swift */,
+				60E917A72839E158004B9C41 /* AppUserDefault.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		604FDCEA2838990E0009386D /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				604FDCAD2837C10A0009386D /* Main.storyboard */,
+				604FDCAB2837C10A0009386D /* AthletesiCloudViewController.swift */,
+				60E9176528392BB0004B9C41 /* AttachmentsiCloudViewController.swift */,
+				60E9176628392BB0004B9C41 /* AthletesGoogleDriveViewController.swift */,
+				604FDCDA283893FE0009386D /* AttachmentsGoogleDriveViewController.swift */,
+				60E9176E2839D2AD004B9C41 /* AthletesFirebaseViewController.swift */,
+				60E9176D2839D2AC004B9C41 /* AttachmentsFirebaseViewController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		60E917712839D4FA004B9C41 /* FirebaseServices */ = {
+			isa = PBXGroup;
+			children = (
+				60E917722839D4FA004B9C41 /* Source */,
+				60E917792839D4FA004B9C41 /* Models */,
+			);
+			path = FirebaseServices;
+			sourceTree = "<group>";
+		};
+		60E917722839D4FA004B9C41 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				60E917782839D4FA004B9C41 /* FirebaseService.swift */,
+				60E917762839D4FA004B9C41 /* PushNotificationSender.swift */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		60E917792839D4FA004B9C41 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				60E9177A2839D4FA004B9C41 /* Conversation.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		60E9178E2839DF05004B9C41 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				60E917982839DF05004B9C41 /* APIService.swift */,
+				60E917992839DF05004B9C41 /* NetworkActivityIndicatorManager.swift */,
+				60E9179A2839DF05004B9C41 /* Reachability.swift */,
+				60E9179B2839DF05004B9C41 /* DataRequest.swift */,
+				60E9178F2839DF05004B9C41 /* APIs */,
+				60E917922839DF05004B9C41 /* ResponseModels */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		60E9178F2839DF05004B9C41 /* APIs */ = {
+			isa = PBXGroup;
+			children = (
+				60E917902839DF05004B9C41 /* APIClient.swift */,
+				60E917972839DF05004B9C41 /* PushNotificationsAPI.swift */,
+			);
+			path = APIs;
+			sourceTree = "<group>";
+		};
+		60E917922839DF05004B9C41 /* ResponseModels */ = {
+			isa = PBXGroup;
+			children = (
+				60E917942839DF05004B9C41 /* ErrorResponse.swift */,
+				60E917A92839E1B3004B9C41 /* ChatMessageResponse.swift */,
+			);
+			path = ResponseModels;
+			sourceTree = "<group>";
+		};
+		99C56C1666D270AB9C6A3C00 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				604FDCEC2838A4350009386D /* CloudKit.framework */,
+				D45DD60C42192C352C0BE09E /* Pods_ReadiCloudStorage.framework */,
+				AB91C6008F40C3999C4D7985 /* Pods_ReadiCloudStorage_ReadiCloudStorageUITests.framework */,
+				DABEC1D7F8A28EB7C5F4228E /* Pods_ReadiCloudStorageTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CC2EDB0F6200D5293BA17962 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0A1EE331AECDD72CDA3D231B /* Pods-ReadiCloudStorage.debug.xcconfig */,
+				BABBF7A5D0DC2E28A75B108C /* Pods-ReadiCloudStorage.release.xcconfig */,
+				A8F78EDEFBD02A1033EF9A2E /* Pods-ReadiCloudStorage-ReadiCloudStorageUITests.debug.xcconfig */,
+				531A3C7A2F9FCE1B08B6B627 /* Pods-ReadiCloudStorage-ReadiCloudStorageUITests.release.xcconfig */,
+				319326B74EB7EAF30916409C /* Pods-ReadiCloudStorageTests.debug.xcconfig */,
+				FDA316AF8EA8A90A0A944DBC /* Pods-ReadiCloudStorageTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -134,9 +367,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 604FDCCE2837C10F0009386D /* Build configuration list for PBXNativeTarget "ReadiCloudStorage" */;
 			buildPhases = (
+				45BDE186621DA3D647E849E8 /* [CP] Check Pods Manifest.lock */,
 				604FDCA02837C10A0009386D /* Sources */,
 				604FDCA12837C10A0009386D /* Frameworks */,
 				604FDCA22837C10A0009386D /* Resources */,
+				4A48334C87FA34EC2886AA74 /* [CP] Embed Pods Frameworks */,
+				BCBFB3361AE38A7A0C479D6C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -151,6 +387,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 604FDCD12837C10F0009386D /* Build configuration list for PBXNativeTarget "ReadiCloudStorageTests" */;
 			buildPhases = (
+				E8FE0830A27978135D418E75 /* [CP] Check Pods Manifest.lock */,
 				604FDCB62837C10E0009386D /* Sources */,
 				604FDCB72837C10E0009386D /* Frameworks */,
 				604FDCB82837C10E0009386D /* Resources */,
@@ -169,9 +406,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 604FDCD42837C10F0009386D /* Build configuration list for PBXNativeTarget "ReadiCloudStorageUITests" */;
 			buildPhases = (
+				80C071103DE061B78A2FFC25 /* [CP] Check Pods Manifest.lock */,
 				604FDCC02837C10E0009386D /* Sources */,
 				604FDCC12837C10E0009386D /* Frameworks */,
 				604FDCC22837C10E0009386D /* Resources */,
+				28F071901749ACEBECBDE68F /* [CP] Embed Pods Frameworks */,
+				68EEF03B99840CD33518D7A9 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -233,7 +473,11 @@
 			files = (
 				604FDCB42837C10E0009386D /* LaunchScreen.storyboard in Resources */,
 				604FDCB12837C10E0009386D /* Assets.xcassets in Resources */,
+				60E9176C28395F73004B9C41 /* client_439461828423-pq7lpqi1esuk8oj6aa8l2uf5mghcf9td.apps.googleusercontent.com.plist in Resources */,
+				604FDCE4283896A80009386D /* AttachmentCVCell.xib in Resources */,
+				604FDCDF283896780009386D /* PersonCVCell.xib in Resources */,
 				604FDCAF2837C10A0009386D /* Main.storyboard in Resources */,
+				60E917872839D7F6004B9C41 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,14 +497,174 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		28F071901749ACEBECBDE68F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ReadiCloudStorage-ReadiCloudStorageUITests/Pods-ReadiCloudStorage-ReadiCloudStorageUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ReadiCloudStorage-ReadiCloudStorageUITests/Pods-ReadiCloudStorage-ReadiCloudStorageUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ReadiCloudStorage-ReadiCloudStorageUITests/Pods-ReadiCloudStorage-ReadiCloudStorageUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		45BDE186621DA3D647E849E8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ReadiCloudStorage-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4A48334C87FA34EC2886AA74 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ReadiCloudStorage/Pods-ReadiCloudStorage-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ReadiCloudStorage/Pods-ReadiCloudStorage-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ReadiCloudStorage/Pods-ReadiCloudStorage-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		68EEF03B99840CD33518D7A9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ReadiCloudStorage-ReadiCloudStorageUITests/Pods-ReadiCloudStorage-ReadiCloudStorageUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ReadiCloudStorage-ReadiCloudStorageUITests/Pods-ReadiCloudStorage-ReadiCloudStorageUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ReadiCloudStorage-ReadiCloudStorageUITests/Pods-ReadiCloudStorage-ReadiCloudStorageUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		80C071103DE061B78A2FFC25 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ReadiCloudStorage-ReadiCloudStorageUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BCBFB3361AE38A7A0C479D6C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ReadiCloudStorage/Pods-ReadiCloudStorage-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ReadiCloudStorage/Pods-ReadiCloudStorage-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ReadiCloudStorage/Pods-ReadiCloudStorage-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E8FE0830A27978135D418E75 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ReadiCloudStorageTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		604FDCA02837C10A0009386D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				604FDCAC2837C10A0009386D /* ViewController.swift in Sources */,
+				604FDCE3283896A80009386D /* AttachmentCVCell.swift in Sources */,
+				60E917A42839E026004B9C41 /* APIService.swift in Sources */,
+				60E917892839D856004B9C41 /* PushNotificationSender.swift in Sources */,
+				60E917A82839E158004B9C41 /* AppUserDefault.swift in Sources */,
+				60E917A52839E026004B9C41 /* NetworkActivityIndicatorManager.swift in Sources */,
+				60E9179E2839E026004B9C41 /* Reachability.swift in Sources */,
+				60E9179F2839E026004B9C41 /* APIClient.swift in Sources */,
+				604FDCAC2837C10A0009386D /* AthletesiCloudViewController.swift in Sources */,
+				60E917AA2839E1B3004B9C41 /* ChatMessageResponse.swift in Sources */,
+				60E917A62839E026004B9C41 /* DataRequest.swift in Sources */,
+				60E9178D2839DCAE004B9C41 /* Constant.swift in Sources */,
+				60E9176F2839D2AD004B9C41 /* AthletesFirebaseViewController.swift in Sources */,
+				604FDCD9283892600009386D /* CloudDataManager.swift in Sources */,
+				60E9176728392BB0004B9C41 /* AttachmentsiCloudViewController.swift in Sources */,
+				60E9176828392BB0004B9C41 /* AthletesGoogleDriveViewController.swift in Sources */,
 				604FDCA82837C10A0009386D /* AppDelegate.swift in Sources */,
+				60E917882839D852004B9C41 /* FirebaseService.swift in Sources */,
+				604FDCDB283893FE0009386D /* AttachmentsGoogleDriveViewController.swift in Sources */,
+				60E917A32839E026004B9C41 /* ErrorResponse.swift in Sources */,
+				60E9179C2839DFFB004B9C41 /* Conversation.swift in Sources */,
+				604FDCDE283896780009386D /* PersonCVCell.swift in Sources */,
+				60E9178B2839DC72004B9C41 /* Handlers.swift in Sources */,
 				604FDCAA2837C10A0009386D /* SceneDelegate.swift in Sources */,
+				60E9176A28393A58004B9C41 /* AlertProvider.swift in Sources */,
+				60E917702839D2AD004B9C41 /* AttachmentsFirebaseViewController.swift in Sources */,
+				60E9179D2839E026004B9C41 /* PushNotificationsAPI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -367,7 +771,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -422,7 +826,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -434,17 +838,21 @@
 		};
 		604FDCCF2837C10F0009386D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0A1EE331AECDD72CDA3D231B /* Pods-ReadiCloudStorage.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ReadiCloudStorage/ReadiCloudStorage.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = M7C27N4V3N;
+				DEVELOPMENT_TEAM = UCEAWF9J36;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ReadiCloudStorage/Info.plist;
+				INFOPLIST_KEY_LSSupportsOpeningDocumentsInPlace = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -452,27 +860,31 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.ep.ReadiCloudStorage;
+				PRODUCT_BUNDLE_IDENTIFIER = com.eyepax.ReadiCloudStorage;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		604FDCD02837C10F0009386D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BABBF7A5D0DC2E28A75B108C /* Pods-ReadiCloudStorage.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ReadiCloudStorage/ReadiCloudStorage.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = M7C27N4V3N;
+				DEVELOPMENT_TEAM = UCEAWF9J36;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ReadiCloudStorage/Info.plist;
+				INFOPLIST_KEY_LSSupportsOpeningDocumentsInPlace = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -480,16 +892,17 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.ep.ReadiCloudStorage;
+				PRODUCT_BUNDLE_IDENTIFIER = com.eyepax.ReadiCloudStorage;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
 		604FDCD22837C10F0009386D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 319326B74EB7EAF30916409C /* Pods-ReadiCloudStorageTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -515,6 +928,7 @@
 		};
 		604FDCD32837C10F0009386D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FDA316AF8EA8A90A0A944DBC /* Pods-ReadiCloudStorageTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -540,6 +954,7 @@
 		};
 		604FDCD52837C10F0009386D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A8F78EDEFBD02A1033EF9A2E /* Pods-ReadiCloudStorage-ReadiCloudStorageUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -563,6 +978,7 @@
 		};
 		604FDCD62837C10F0009386D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 531A3C7A2F9FCE1B08B6B627 /* Pods-ReadiCloudStorage-ReadiCloudStorageUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
