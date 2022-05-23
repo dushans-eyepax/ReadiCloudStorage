@@ -46,5 +46,11 @@
 	</dict>
 	<key>UIFileSharingEnabled</key>
 	<true/>
+	<key>NSCameraUsageDescription</key>
+	<string>Take camera photos for saving athlete media to cloud</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>Take camera photos for saving athlete media to cloud</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>Please allow access to record audio for media recording</string>
 </dict>
 </plist>

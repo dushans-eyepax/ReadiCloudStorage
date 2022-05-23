@@ -359,6 +359,9 @@ PODS:
   - Firebase/Firestore (8.9.0):
     - Firebase/CoreOnly
     - FirebaseFirestore (~> 8.9.0)
+  - Firebase/Storage (8.9.0):
+    - Firebase/CoreOnly
+    - FirebaseStorage (~> 8.9.0)
   - FirebaseAnalytics (8.9.0):
     - FirebaseAnalytics/AdIdSupport (= 8.9.0)
     - FirebaseCore (~> 8.0)
@@ -412,6 +415,9 @@ PODS:
     - GoogleUtilities/Environment (~> 7.6)
     - GoogleUtilities/UserDefaults (~> 7.6)
     - PromisesObjC (< 3.0, >= 1.2)
+  - FirebaseStorage (8.9.0):
+    - FirebaseCore (~> 8.0)
+    - GTMSessionFetcher/Core (~> 1.5)
   - GoogleAPIClientForREST/Core (1.2.1):
     - GTMSessionFetcher (>= 1.1.7)
   - GoogleAPIClientForREST/Drive (1.2.1):
@@ -524,6 +530,7 @@ DEPENDENCIES:
   - Firebase/Core
   - Firebase/Database
   - Firebase/Firestore
+  - Firebase/Storage
   - GoogleAPIClientForREST/Drive (~> 1.2.1)
   - GoogleSignIn (~> 4.1.1)
   - NotificationBannerSwift
@@ -542,6 +549,7 @@ SPEC REPOS:
     - FirebaseDatabase
     - FirebaseFirestore
     - FirebaseInstallations
+    - FirebaseStorage
     - GoogleAPIClientForREST
     - GoogleAppMeasurement
     - GoogleDataTransport
@@ -572,6 +580,7 @@ SPEC CHECKSUMS:
   FirebaseDatabase: 2236b804cf0cac165b4620669bedf7ee643a2bcc
   FirebaseFirestore: 15ae9648476436efed698a909e44c4737498f9b4
   FirebaseInstallations: caa7c8e0d3e2345b8829d2fa9ca1b4dfbf2fcc85
+  FirebaseStorage: 452c98c31ccb40b819764bf3039426c4388d9939
   GoogleAPIClientForREST: a8b95a252014ce2e618df6b75dc72eca2c00b4af
   GoogleAppMeasurement: b54a857d347703d67c7a6f23713760c9bcfe9008
   GoogleDataTransport: 629c20a4d363167143f30ea78320d5a7eb8bd940
@@ -590,6 +599,6 @@ SPEC CHECKSUMS:
   SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
   SwiftyJSON: 2f33a42c6fbc52764d96f13368585094bfd8aa5e
 
-PODFILE CHECKSUM: 5e658eb2da6abc819b886bb6df4a632db984126b
+PODFILE CHECKSUM: cd1c62432d1081991838abdcf51801e25d6b1b7c
 
 COCOAPODS: 1.11.2
