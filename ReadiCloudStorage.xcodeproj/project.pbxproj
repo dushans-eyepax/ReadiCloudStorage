@@ -371,8 +371,8 @@
 				604FDCA02837C10A0009386D /* Sources */,
 				604FDCA12837C10A0009386D /* Frameworks */,
 				604FDCA22837C10A0009386D /* Resources */,
-				4A48334C87FA34EC2886AA74 /* [CP] Embed Pods Frameworks */,
-				BCBFB3361AE38A7A0C479D6C /* [CP] Copy Pods Resources */,
+				01A4984365641184F1E96126 /* [CP] Embed Pods Frameworks */,
+				D468614D151871096102AC71 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -410,8 +410,8 @@
 				604FDCC02837C10E0009386D /* Sources */,
 				604FDCC12837C10E0009386D /* Frameworks */,
 				604FDCC22837C10E0009386D /* Resources */,
-				28F071901749ACEBECBDE68F /* [CP] Embed Pods Frameworks */,
-				68EEF03B99840CD33518D7A9 /* [CP] Copy Pods Resources */,
+				DE6370D38555F44CBD52D603 /* [CP] Embed Pods Frameworks */,
+				6F9C8BAC2F3EB0A2C7A70927 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -498,21 +498,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		28F071901749ACEBECBDE68F /* [CP] Embed Pods Frameworks */ = {
+		01A4984365641184F1E96126 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ReadiCloudStorage-ReadiCloudStorageUITests/Pods-ReadiCloudStorage-ReadiCloudStorageUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-ReadiCloudStorage/Pods-ReadiCloudStorage-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ReadiCloudStorage-ReadiCloudStorageUITests/Pods-ReadiCloudStorage-ReadiCloudStorageUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-ReadiCloudStorage/Pods-ReadiCloudStorage-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ReadiCloudStorage-ReadiCloudStorageUITests/Pods-ReadiCloudStorage-ReadiCloudStorageUITests-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ReadiCloudStorage/Pods-ReadiCloudStorage-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		45BDE186621DA3D647E849E8 /* [CP] Check Pods Manifest.lock */ = {
@@ -537,24 +537,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		4A48334C87FA34EC2886AA74 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ReadiCloudStorage/Pods-ReadiCloudStorage-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ReadiCloudStorage/Pods-ReadiCloudStorage-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ReadiCloudStorage/Pods-ReadiCloudStorage-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		68EEF03B99840CD33518D7A9 /* [CP] Copy Pods Resources */ = {
+		6F9C8BAC2F3EB0A2C7A70927 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -593,7 +576,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		BCBFB3361AE38A7A0C479D6C /* [CP] Copy Pods Resources */ = {
+		D468614D151871096102AC71 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -608,6 +591,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ReadiCloudStorage/Pods-ReadiCloudStorage-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DE6370D38555F44CBD52D603 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ReadiCloudStorage-ReadiCloudStorageUITests/Pods-ReadiCloudStorage-ReadiCloudStorageUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ReadiCloudStorage-ReadiCloudStorageUITests/Pods-ReadiCloudStorage-ReadiCloudStorageUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ReadiCloudStorage-ReadiCloudStorageUITests/Pods-ReadiCloudStorage-ReadiCloudStorageUITests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		E8FE0830A27978135D418E75 /* [CP] Check Pods Manifest.lock */ = {
@@ -724,6 +724,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				"ARCHS[sdk=iphonesimulator*]" = x86_64;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
@@ -757,6 +758,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				EXCLUDED_ARCHS = arm64;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -785,6 +787,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				"ARCHS[sdk=iphonesimulator*]" = x86_64;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
@@ -818,6 +821,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXCLUDED_ARCHS = arm64;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;

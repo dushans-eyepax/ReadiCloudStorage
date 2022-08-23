@@ -46,6 +46,8 @@ struct Empty;
 
 namespace api {
 
+extern const int kDefaultTransactionMaxAttempts;
+
 class Firestore : public std::enable_shared_from_this<Firestore> {
  public:
   Firestore() = default;
@@ -56,17 +58,6 @@ class Firestore : public std::enable_shared_from_this<Firestore> {
                 auth_credentials_provider,
             std::shared_ptr<credentials::AppCheckCredentialsProvider>
                 app_check_credentials_provider,
-            std::shared_ptr<util::AsyncQueue> worker_queue,
-            std::unique_ptr<remote::FirebaseMetadataProvider>
-                firebase_metadata_provider,
-            void* extension);
-
-  // TODO(appcheck): Remove this constructor once we changed the C++ SDK
-  // to call the new constructor.
-  Firestore(model::DatabaseId database_id,
-            std::string persistence_key,
-            std::shared_ptr<credentials::AuthCredentialsProvider>
-                auth_credentials_provider,
             std::shared_ptr<util::AsyncQueue> worker_queue,
             std::unique_ptr<remote::FirebaseMetadataProvider>
                 firebase_metadata_provider,
@@ -102,8 +93,10 @@ class Firestore : public std::enable_shared_from_this<Firestore> {
   WriteBatch GetBatch();
   core::Query GetCollectionGroup(std::string collection_id);
 
+  // The default value for `max_attempts` is `kDefaultTransactionMaxAttempts`.
   void RunTransaction(core::TransactionUpdateCallback update_callback,
-                      core::TransactionResultCallback result_callback);
+                      core::TransactionResultCallback result_callback,
+                      int max_attempts);
 
   void Terminate(util::StatusCallback callback);
   void ClearPersistence(util::StatusCallback callback);
