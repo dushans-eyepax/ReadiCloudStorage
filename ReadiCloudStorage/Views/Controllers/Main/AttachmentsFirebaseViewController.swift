@@ -21,6 +21,7 @@ class AttachmentsFirebaseViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        print("DEBUG: AttachmentsFirebaseViewController -> viewDidLoad")
         
         setupView()
         

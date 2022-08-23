@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		0287F05A0F4AF058C15F3A03 /* Pods_ReadiCloudStorage_ReadiCloudStorageUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB91C6008F40C3999C4D7985 /* Pods_ReadiCloudStorage_ReadiCloudStorageUITests.framework */; };
 		03A8DD389223963E7EF8E2FC /* Pods_ReadiCloudStorageTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DABEC1D7F8A28EB7C5F4228E /* Pods_ReadiCloudStorageTests.framework */; };
+		05929EB928B4C7AC00DF5750 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05929EB828B4C7AC00DF5750 /* StringExtensions.swift */; };
+		05D96E5428B4F64A00EF2DE9 /* FileManagerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05D96E5328B4F64A00EF2DE9 /* FileManagerExtensions.swift */; };
 		604FDCA82837C10A0009386D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 604FDCA72837C10A0009386D /* AppDelegate.swift */; };
 		604FDCAA2837C10A0009386D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 604FDCA92837C10A0009386D /* SceneDelegate.swift */; };
 		604FDCAC2837C10A0009386D /* AthletesiCloudViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 604FDCAB2837C10A0009386D /* AthletesiCloudViewController.swift */; };
@@ -67,6 +69,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		05929EB828B4C7AC00DF5750 /* StringExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
+		05D96E5328B4F64A00EF2DE9 /* FileManagerExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManagerExtensions.swift; sourceTree = "<group>"; };
 		0A1EE331AECDD72CDA3D231B /* Pods-ReadiCloudStorage.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReadiCloudStorage.debug.xcconfig"; path = "Target Support Files/Pods-ReadiCloudStorage/Pods-ReadiCloudStorage.debug.xcconfig"; sourceTree = "<group>"; };
 		319326B74EB7EAF30916409C /* Pods-ReadiCloudStorageTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReadiCloudStorageTests.debug.xcconfig"; path = "Target Support Files/Pods-ReadiCloudStorageTests/Pods-ReadiCloudStorageTests.debug.xcconfig"; sourceTree = "<group>"; };
 		531A3C7A2F9FCE1B08B6B627 /* Pods-ReadiCloudStorage-ReadiCloudStorageUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReadiCloudStorage-ReadiCloudStorageUITests.release.xcconfig"; path = "Target Support Files/Pods-ReadiCloudStorage-ReadiCloudStorageUITests/Pods-ReadiCloudStorage-ReadiCloudStorageUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -150,6 +154,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		05929EB728B4C79300DF5750 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				05929EB828B4C7AC00DF5750 /* StringExtensions.swift */,
+				05D96E5328B4F64A00EF2DE9 /* FileManagerExtensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		604FDC9B2837C10A0009386D = {
 			isa = PBXGroup;
 			children = (
@@ -175,6 +188,7 @@
 		604FDCA62837C10A0009386D /* ReadiCloudStorage */ = {
 			isa = PBXGroup;
 			children = (
+				05929EB728B4C79300DF5750 /* Extensions */,
 				604FDCE7283898E00009386D /* LaunchScreen */,
 				604FDCE8283898ED0009386D /* AppDelegate */,
 				604FDCE5283898A80009386D /* Views */,
@@ -640,6 +654,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				604FDCE3283896A80009386D /* AttachmentCVCell.swift in Sources */,
+				05D96E5428B4F64A00EF2DE9 /* FileManagerExtensions.swift in Sources */,
 				60E917A42839E026004B9C41 /* APIService.swift in Sources */,
 				60E917892839D856004B9C41 /* PushNotificationSender.swift in Sources */,
 				60E917A82839E158004B9C41 /* AppUserDefault.swift in Sources */,
@@ -660,6 +675,7 @@
 				60E917A32839E026004B9C41 /* ErrorResponse.swift in Sources */,
 				60E9179C2839DFFB004B9C41 /* Conversation.swift in Sources */,
 				604FDCDE283896780009386D /* PersonCVCell.swift in Sources */,
+				05929EB928B4C7AC00DF5750 /* StringExtensions.swift in Sources */,
 				60E9178B2839DC72004B9C41 /* Handlers.swift in Sources */,
 				604FDCAA2837C10A0009386D /* SceneDelegate.swift in Sources */,
 				60E9176A28393A58004B9C41 /* AlertProvider.swift in Sources */,

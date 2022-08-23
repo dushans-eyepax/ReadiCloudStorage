@@ -26,6 +26,7 @@ class AthletesGoogleDriveViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        print("DEBUG: AthletesGoogleDriveViewController -> viewDidLoad")
         
         setupView()
         

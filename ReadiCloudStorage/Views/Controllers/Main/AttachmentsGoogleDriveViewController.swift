@@ -21,6 +21,7 @@ class AttachmentsGoogleDriveViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        print("DEBUG: AttachmentsGoogleDriveViewController -> viewDidLoad")
         
         setupView()
         

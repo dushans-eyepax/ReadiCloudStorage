@@ -22,6 +22,7 @@ class AttachmentsiCloudViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        print("DEBUG: AttachmentsiCloudViewController -> viewDidLoad")
         
         setupView()
         

@@ -25,6 +25,7 @@ class AthletesFirebaseViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        print("DEBUG: AthletesFirebaseViewController -> viewDidLoad")
         
         setupView()
         
