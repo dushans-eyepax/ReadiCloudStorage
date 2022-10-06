@@ -27,4 +27,3 @@ DerivedData
 # Carthage/
 Podfile.lock
 Pods
-Pods/FirebaseFirestore/*
