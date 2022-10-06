@@ -113,31 +113,31 @@ extension AthletesGoogleDriveViewController {
 }
 
 extension AthletesGoogleDriveViewController {
-    
+
     func getFolderId(name: String, service: GTLRDriveService, user: GIDGoogleUser?, completion: @escaping (String?) -> Void) {
-        
+
         guard let user = user else {
             return
         }
-        
+
         let query = GTLRDriveQuery_FilesList.query()
 
         // Comma-separated list of areas the search applies to. E.g., appDataFolder, photos, drive.
         query.spaces = "drive"
-        
+
         // Comma-separated list of access levels to search in. Some possible values are "user,allTeamDrives" or "user"
         query.corpora = "user"
-            
+
         let withName = "name = '\(name)'" // Case insensitive!
         let foldersOnly = "mimeType = 'application/vnd.google-apps.folder'"
         let ownedByUser = "'\(user.profile?.email ?? "")' in owners"
         query.q = "\(withName) and \(foldersOnly) and \(ownedByUser)"
-        
+
         service.executeQuery(query) { (_, result, error) in
             guard error == nil else {
                 fatalError(error!.localizedDescription)
             }
-                                     
+
             let folderList = result as! GTLRDrive_FileList
 
             // For brevity, assumes only one folder is returned.
