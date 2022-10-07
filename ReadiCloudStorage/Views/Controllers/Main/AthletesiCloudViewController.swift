@@ -11,7 +11,7 @@ import MobileCoreServices
 import AVFoundation
 
 class AthletesiCloudViewController: UIViewController {
-
+    
     @IBOutlet weak var collectionView: UICollectionView!
     
     fileprivate let sectionInsets = UIEdgeInsets(top: 10.0, left: 10.0, bottom: 10.0, right: 10.0)
@@ -22,7 +22,7 @@ class AthletesiCloudViewController: UIViewController {
     let cellReuseIdentifier = "PersonCVCell"
     
     let cloudDatabase = CKContainer.default().publicCloudDatabase
-
+    
     var files: [CKRecord] = []
     
     override func viewDidLoad() {
@@ -49,13 +49,13 @@ class AthletesiCloudViewController: UIViewController {
     @objc func loadData() {
         let query = CKQuery(recordType: "Note", predicate: NSPredicate(value: true))
         cloudDatabase.perform(query, inZoneWith: nil) { (records, error) in
-
+            
             guard let records = records else { return }
             print(records)
             let sortedRecords = records.sorted(by: {$0.creationDate! > $1.creationDate!})
-
+            
             self.files = sortedRecords
-
+            
             DispatchQueue.main.async {
                 self.collectionView.reloadData()
                 self.collectionView.refreshControl?.endRefreshing()
@@ -87,10 +87,10 @@ class AthletesiCloudViewController: UIViewController {
         pickerController.sourceType = sourceType
         pickerController.mediaTypes = [imageMediaType, movieMediaType]
         pickerController.delegate = self
-
+        
         present(pickerController, animated: true, completion: nil)
     }
-
+    
     func moveToAttachments(with record: CKRecord) {
         if let attachmentsVc = storyboard?.instantiateViewController(withIdentifier: "\(AttachmentsiCloudViewController.self)") as? AttachmentsiCloudViewController {
             attachmentsVc.record = record
@@ -98,11 +98,11 @@ class AthletesiCloudViewController: UIViewController {
         }
     }
     
-//    func showDocumentPicker(){
-//        let documentPickerController = UIDocumentPickerViewController(documentTypes: [String(kUTTypePDF), String(kUTTypeImage), String(kUTTypeMovie), String(kUTTypeVideo), String(kUTTypePlainText), String(kUTTypeMP3)], in: .import)
-//        documentPickerController.delegate = self
-//        present(documentPickerController, animated: true, completion: nil)
-//    }
+    //    func showDocumentPicker(){
+    //        let documentPickerController = UIDocumentPickerViewController(documentTypes: [String(kUTTypePDF), String(kUTTypeImage), String(kUTTypeMovie), String(kUTTypeVideo), String(kUTTypePlainText), String(kUTTypeMP3)], in: .import)
+    //        documentPickerController.delegate = self
+    //        present(documentPickerController, animated: true, completion: nil)
+    //    }
     
 }
 
@@ -112,16 +112,21 @@ extension AthletesiCloudViewController: UIImagePickerControllerDelegate, UINavig
         let mediaType = info[UIImagePickerController.InfoKey.mediaType] as! NSString
         print("DEBUG: imagePickerController")
         // Check for the media type
+        
+        //Check for image existence
+        //        print(info.description.fileName())
+        
         if mediaType.isEqual(to: kUTTypeImage as NSString as String),
            let image = info[.originalImage] as? UIImage {
-//            let orientationFixedImage = fixedOrientation(image: image) ?? UIImage()
+            //            let orientationFixedImage = fixedOrientation(image: image) ?? UIImage()
             let orientationFixedImage = image
             if let imageURL = mediaSource == .photoLibrary ? info[.imageURL] as? URL : self.getURLForPickedTemporaryImage(image: orientationFixedImage) {
+                print(imageURL.lastPathComponent)
                 addImageIntoDirectory(image: image, athleteName: "Adam",filename: imageURL.lastPathComponent)
             }
         }
         else if mediaType.isEqual(to: kUTTypeMovie as NSString as String),
-            let mediaURL = info[.mediaURL] as? URL {
+                let mediaURL = info[.mediaURL] as? URL {
             let mediaData = NSData(contentsOf: mediaURL)
             
             addVideoIntoDirectory(video: mediaData, athleteName: "Adam", filename: mediaURL.lastPathComponent)
@@ -129,7 +134,7 @@ extension AthletesiCloudViewController: UIImagePickerControllerDelegate, UINavig
         else {
             print("It's not a targetted media type")
         }
-
+        
         picker.dismiss(animated: true, completion: nil)
         
         //showDocumentPicker()
@@ -137,30 +142,42 @@ extension AthletesiCloudViewController: UIImagePickerControllerDelegate, UINavig
         print(FileManager.default.urls(for: .documentDirectory) ?? "none")
         print(FileManager.default.urls(for: .documentDirectory) ?? "none")
         
-        for val in listFilesFromDocumentsFolder()!{
-            print("val \(val)")
-        }
+        
+        
+        //        for val in listFilesFromDocumentsFolder()!{
+        //            print("val \(val)")
+        //        }
     }
     
     func listFilesFromDocumentsFolder() -> [String]?
     {
         let fileMngr = FileManager.default;
-
+        
         // Full path to documents directory
         let docs = fileMngr.urls(for: .documentDirectory, in: .userDomainMask)[0].path
-
+        
+        print(docs)
+        
         // List all contents of directory and return as [String] OR nil if failed
         return try? fileMngr.contentsOfDirectory(atPath:"\(docs)/Documents")
     }
-
-    func addImageIntoDirectory(image : UIImage, athleteName: String, filename:String){
-        let documentsURL = FileManager.default.url(forUbiquityContainerIdentifier: nil)
-        let folderURL = documentsURL?.appendingPathComponent("Documents/\(athleteName)/")
-        guard let fileURL = folderURL?.appendingPathComponent(filename) else { return }
+    
+    func addImageIntoDirectory(image : UIImage, athleteName: String, filename: String){
+        
+        var documents = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0]
+        documents.appendPathComponent(athleteName, isDirectory: true)
+        
+        do {
+            try FileManager.default.createDirectory(atPath: documents.path, withIntermediateDirectories: true)
+        } catch {
+            print("DEBUG: Folder creation failed")
+        }
+        
+        let url = documents.appendingPathComponent(filename)
         
         var data: Data?
         switch(filename.fileExtension()){
-        case "jpeg", "jpg":
+        case "jpeg", "jpg", "heic":
             data = image.jpegData(compressionQuality: 0.9)
         case "png":
             data = image.pngData()
@@ -170,7 +187,7 @@ extension AthletesiCloudViewController: UIImagePickerControllerDelegate, UINavig
         
         if data != nil{
             do {
-                try data?.write(to: fileURL)
+                try data?.write(to: url)
             }
             catch {
                 print("DEBUG: Something wrong, Please try again")
@@ -182,7 +199,7 @@ extension AthletesiCloudViewController: UIImagePickerControllerDelegate, UINavig
         let documentsURL = FileManager.default.url(forUbiquityContainerIdentifier: nil)
         let folderURL = documentsURL?.appendingPathComponent("Documents/\(athleteName)/")
         guard let fileURL = folderURL?.appendingPathComponent(filename) else { return }
-
+        
         if video != nil{
             do {
                 try video?.write(to: fileURL)
@@ -221,19 +238,19 @@ extension AthletesiCloudViewController: UICollectionViewDataSource, UICollection
 extension AthletesiCloudViewController: UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-
+        
         let paddingSpace = sectionInsets.left * (itemsPerRow + 1)
         let availableWidth = collectionView.frame.width - paddingSpace
         let widthPerItem = availableWidth / itemsPerRow
         let heightPerItem = widthPerItem
-
+        
         return CGSize(width: widthPerItem, height: heightPerItem)
     }
-
+    
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
         return sectionInsets
     }
-
+    
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
         return sectionInsets.left
     }
@@ -249,24 +266,24 @@ extension AthletesiCloudViewController {
             let fileName = "demoImageFileName1.\(fileExtension)"
             //TODO: let metaData = StorageMetadata()
             
-//            let storageReference = Storage.storage().reference().child(fileName)
-//            let currentUploadTask = storageReference.putFile(from: fileUrl, metadata: metaData) { (storageMetaData, error) in
-//                if let error = error {
-//                    print("Upload error: \(error.localizedDescription)")
-//                    return
-//                }
-//
-//                // Show UIAlertController here
-//                AlertProvider(vc: self).showAlert(title: "Success", message: "Image file: \(fileName) is uploaded! View it at Firebase console!", action: AlertAction(title: "OK"))
-//
-//                storageReference.downloadURL { (url, error) in
-//                    if let error = error  {
-//                        print("Error on getting download url: \(error.localizedDescription)")
-//                        return
-//                    }
-//                    print("Download url of \(fileName) is \(url!.absoluteString)")
-//                }
-//            }
+            //            let storageReference = Storage.storage().reference().child(fileName)
+            //            let currentUploadTask = storageReference.putFile(from: fileUrl, metadata: metaData) { (storageMetaData, error) in
+            //                if let error = error {
+            //                    print("Upload error: \(error.localizedDescription)")
+            //                    return
+            //                }
+            //
+            //                // Show UIAlertController here
+            //                AlertProvider(vc: self).showAlert(title: "Success", message: "Image file: \(fileName) is uploaded! View it at Firebase console!", action: AlertAction(title: "OK"))
+            //
+            //                storageReference.downloadURL { (url, error) in
+            //                    if let error = error  {
+            //                        print("Error on getting download url: \(error.localizedDescription)")
+            //                        return
+            //                    }
+            //                    print("Download url of \(fileName) is \(url!.absoluteString)")
+            //                }
+            //            }
         } catch {
             print("Error on extracting data from url: \(error.localizedDescription)")
         }
@@ -281,18 +298,18 @@ extension AthletesiCloudViewController {
             // This is default orientation, don't need to do anything
             return self.copy() as? UIImage
         }
-
+        
         guard let cgImage = image.cgImage else {
             // CGImage is not available
             return nil
         }
-
+        
         guard let colorSpace = cgImage.colorSpace, let ctx = CGContext(data: nil, width: Int(image.size.width), height: Int(image.size.height), bitsPerComponent: cgImage.bitsPerComponent, bytesPerRow: 0, space: colorSpace, bitmapInfo: CGImageAlphaInfo.premultipliedLast.rawValue) else {
             return nil // Not able to create CGContext
         }
-
+        
         var transform: CGAffineTransform = CGAffineTransform.identity
-
+        
         switch image.imageOrientation {
         case .down, .downMirrored:
             transform = transform.translatedBy(x: image.size.width, y: image.size.height)
@@ -309,7 +326,7 @@ extension AthletesiCloudViewController {
             fatalError("Missing...")
             break
         }
-
+        
         // Flip image one more time if needed to, this is to prevent flipped image
         switch image.imageOrientation {
         case .upMirrored, .downMirrored:
@@ -324,9 +341,9 @@ extension AthletesiCloudViewController {
             fatalError("Missing...")
             break
         }
-
+        
         ctx.concatenate(transform)
-
+        
         switch image.imageOrientation {
         case .left, .leftMirrored, .right, .rightMirrored:
             ctx.draw(cgImage, in: CGRect(x: 0, y: 0, width: image.size.height, height: image.size.width))
@@ -334,7 +351,7 @@ extension AthletesiCloudViewController {
             ctx.draw(cgImage, in: CGRect(x: 0, y: 0, width: image.size.width, height: image.size.height))
             break
         }
-
+        
         guard let newCGImage = ctx.makeImage() else { return nil }
         return UIImage.init(cgImage: newCGImage, scale: 1, orientation: .up)
     }
