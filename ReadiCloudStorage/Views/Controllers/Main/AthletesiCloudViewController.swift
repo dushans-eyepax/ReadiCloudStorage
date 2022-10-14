@@ -164,23 +164,43 @@ extension AthletesiCloudViewController: UIImagePickerControllerDelegate, UINavig
     
     func addImageIntoDirectory(image : UIImage, athleteName: String, filename: String){
         
-        var documents = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0]
-        documents.appendPathComponent(athleteName, isDirectory: true)
+//        var documents = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0]
+//        documents.appendPathComponent(athleteName, isDirectory: true)
         
+        
+        
+        var driveURL = FileManager.default.url(forUbiquityContainerIdentifier: nil)?.appendingPathComponent("Documents")
+        if (driveURL?.appendPathComponent(athleteName, isDirectory: true)) != nil {
+            let alert = UIAlertController(title: "Success", message: "File Copied to iCloud Documents folder", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "OK", style: .default))
+            DispatchQueue.main.asyncAfter(deadline: .now(), execute: {
+                self.present(alert, animated: true, completion: nil)
+            })
+        } else {
+            let alert = UIAlertController(title: "Error", message: "No iCloud setup on this device", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "OK", style: .default))
+            DispatchQueue.main.asyncAfter(deadline: .now(), execute: {
+                self.present(alert, animated: true, completion: nil)
+            })
+            print("No iCloud setup in this device")
+            return
+        }
+            
         do {
-            try FileManager.default.createDirectory(atPath: documents.path, withIntermediateDirectories: true)
+//            try FileManager.default.createDirectory(atPath: documents.path, withIntermediateDirectories: true)
+            try FileManager.default.createDirectory(atPath: driveURL!.path, withIntermediateDirectories: true)
         } catch {
             print("DEBUG: Folder creation failed")
         }
         
-        let url = documents.appendingPathComponent(filename)
+        let url = driveURL!.appendingPathComponent(filename)
         
         var data: Data?
         switch(filename.fileExtension()){
-        case "jpeg", "jpg", "heic":
-            data = image.jpegData(compressionQuality: 0.9)
-        case "png":
-            data = image.pngData()
+        case "jpeg", "jpg", "heic", "png":
+            data = image.jpegData(compressionQuality: 0.7)
+//        case "png":
+//            data = image.pngData()
         default:
             print("DEBUG: Not supported file type")
         }
